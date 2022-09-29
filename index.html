@@ -28,30 +28,27 @@
     </header>
     <main>
       <div id="textFormat">
-        <div>
+        <div id="text_container">
           <h2>TEXT FORMAT</h2>
+          <div id="commands">
+            <button onclick="setStylePoppins()">Poppins</button>
+            <button onclick="setStyleRoboto()">Roboto</button>
+            <button onclick="setStyleBold()">Bold</button>
+          </div>
           <p id="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam sit architecto ullam. Consequuntur cumque ullam dolorem error fugit, harum quisquam soluta et molestiae tenetur
             eveniet odit omnis aut quibusdam? Dignissimos beatae nulla est dolores officia velit, enim nemo nobis, voluptates esse blanditiis amet minima quos vero delectus eveniet distinctio qui
             ratione pariatur quod animi voluptate optio. Quo, explicabo ad. Exercitationem vero pariatur vel nemo animi consequatur recusandae eos dolorum facere ea incidunt, consequuntur beatae
-            necessitatibus fugiat inventore fuga ipsa, sapiente quis temporibus odio dicta, nostrum sint tenetur magnam! Eos? Quas ullam hic modi voluptates dicta, provident necessitatibus
-            reprehenderit doloribus vitae culpa reiciendis, eius aliquam illo molestias autem incidunt. Voluptatibus autem incidunt fuga voluptatum aperiam ea alias. Porro, eius eaque? Cumque id
-            eligendi quaerat quidem, sint unde ullam corrupti ipsam alias laborum tenetur, quod natus tempore. Ipsam expedita dolores exercitationem autem maiores! Error id ducimus cupiditate aliquid
-            quam, sint provident! Quas, quisquam praesentium. Id repellendus deserunt odio illo tenetur veritatis? Quod facere repudiandae sapiente ad at, maxime illum nemo architecto, sint nesciunt
-            quisquam veniam beatae! Voluptates deserunt cum iste quibusdam?
           </p>
-        </div>
-        <div id="commands">
-          <button onclick="setStylePoppins()">Poppins</button>
-          <button onclick="setStyleRoboto()">Roboto</button>
-          <button onclick="setStyleBold()">Bold</button>
         </div>
       </div>
       <div id="toDoList">
-        <ul>
-          TO-DO LIST
-        </ul>
-        <p>da implementare</p>
+        <div id="list_header">
+          <span>To-Do</span>
+          <button onclick="addListItem(event)">+</button>
+        </div>
+        <input type="text" placeholder="write new list item" />
+        <ul id="list"></ul>
       </div>
     </main>
     <script src="./script.js"></script>
