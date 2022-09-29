@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Js Esercitazione</title>
+  </head>
+  <body>
+    <header>
+      <h1>HELLO WORLD!</h1>
+      <div id="ddMenu">
+        <button onclick="dropMenu()">Pagina</button>
+        <div id="dropped" class="inactive">
+          <a href="#">UP</a>
+          <a href="#textFormat">Text format</a>
+          <a href="#toDoList">To-do List</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="textFormat">
+        <div>
+          <h2>TEXT FORMAT</h2>
+          <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam sit architecto ullam. Consequuntur cumque ullam dolorem error fugit, harum quisquam soluta et molestiae tenetur
+            eveniet odit omnis aut quibusdam? Dignissimos beatae nulla est dolores officia velit, enim nemo nobis, voluptates esse blanditiis amet minima quos vero delectus eveniet distinctio qui
+            ratione pariatur quod animi voluptate optio. Quo, explicabo ad. Exercitationem vero pariatur vel nemo animi consequatur recusandae eos dolorum facere ea incidunt, consequuntur beatae
+            necessitatibus fugiat inventore fuga ipsa, sapiente quis temporibus odio dicta, nostrum sint tenetur magnam! Eos? Quas ullam hic modi voluptates dicta, provident necessitatibus
+            reprehenderit doloribus vitae culpa reiciendis, eius aliquam illo molestias autem incidunt. Voluptatibus autem incidunt fuga voluptatum aperiam ea alias. Porro, eius eaque? Cumque id
+            eligendi quaerat quidem, sint unde ullam corrupti ipsam alias laborum tenetur, quod natus tempore. Ipsam expedita dolores exercitationem autem maiores! Error id ducimus cupiditate aliquid
+            quam, sint provident! Quas, quisquam praesentium. Id repellendus deserunt odio illo tenetur veritatis? Quod facere repudiandae sapiente ad at, maxime illum nemo architecto, sint nesciunt
+            quisquam veniam beatae! Voluptates deserunt cum iste quibusdam?
+          </p>
+        </div>
+        <div id="commands">
+          <button onclick="setStylePoppins()">Poppins</button>
+          <button onclick="setStyleRoboto()">Roboto</button>
+          <button onclick="setStyleBold()">Bold</button>
+        </div>
+      </div>
+      <div id="toDoList">
+        <ul>
+          TO-DO LIST
+        </ul>
+        <p>da implementare</p>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
